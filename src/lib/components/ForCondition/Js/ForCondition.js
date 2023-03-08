@@ -6,7 +6,6 @@ const For = ({ of, children }) => {
   });
 
 }
-
 export { For };
 
 //make it in typescript
