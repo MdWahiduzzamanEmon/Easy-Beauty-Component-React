@@ -17,4 +17,4 @@ Object.defineProperty(exports, "Show", {
 });
 var _ForCondition = _interopRequireDefault(require("./components/ForCondition/TS/ForCondition"));
 var _ShowComponent = _interopRequireDefault(require("./components/ShowComponent/TS/ShowComponent"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj: { __esModule: any; }) { return obj && obj.__esModule ? obj : { default: obj }; }

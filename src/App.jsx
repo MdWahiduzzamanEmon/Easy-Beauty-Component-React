@@ -1,7 +1,8 @@
 // import lazyLoad from "./lib";
 
 import { useEffect, useState } from "react";
-import { For, Show } from "./lib";
+import { For, Show } from "./lib/index.js";
+
 
 // const Home= lazyLoad("./Home/Home","Home")
 

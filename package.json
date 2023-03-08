@@ -8,6 +8,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "README.md",
@@ -31,20 +32,19 @@
     "easy-beauty-components-react-ui",
     "easy-beauty-components-react-ui-library",
     "easy-beauty-components-react-ui-libraries",
-    "easy-beauty-components-react-ui-lib"
+    "easy-beauty-components-react-ui-lib",
+    "typescript"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React",
-	"email": "wahedemon09@gmail.com",
-	"username": "MdWahiduzzamanEmon"
+    "email": "wahedemon09@gmail.com",
+    "username": "MdWahiduzzamanEmon"
   },
   "bugs": {
     "url": "https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React"
   },
-
   "homepage": "https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React",
-
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -61,7 +61,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --extensions \".ts,.tsx,.js,.jsx\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -87,5 +87,10 @@
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2"
-  }
+  },
+  "moduleFileExtensions": [
+    "js",
+    "ts",
+    "tsx"
+  ]
 }

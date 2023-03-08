@@ -5,4 +5,4 @@
 import For from "./components/ForCondition/TS/ForCondition.tsx";
 import Show from "./components/ShowComponent/TS/ShowComponent.ts";
 
-export { For, Show }
+export { For, Show };
