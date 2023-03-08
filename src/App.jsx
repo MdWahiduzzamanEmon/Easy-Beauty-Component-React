@@ -25,7 +25,7 @@ function App() {
         list.length > 0
       }
       FallBack={
-        <div style={{ color: "red" }}>
+        <div>
           <h1>Loading...</h1>
         </div>
       }

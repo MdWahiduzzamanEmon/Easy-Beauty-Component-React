@@ -8,35 +8,22 @@ interface showComponentProps {
 }
 
 const Show = ({ when, children, FallBack }: showComponentProps) => {
-  let child = children;
-  if (!children) {
-    return console.error('Show component must have a "children" prop');
-  } else {
-    child = [children] as any;
-  }
-  //when not boolean
+  //when is not boolean
   if (typeof when !== "boolean")
     return console.error('Show component "when" prop must be a boolean');
-  //children not array
-  if (!Array.isArray(child))
-    return console.error('Show component "children" prop must be an array');
-  //children array empty
-  if (child.length === 0)
-    return console.error('Show component "children" prop must not be empty');
-
-  //children array with more than one element
-  if (child.length > 1)
-    return console.error(
-      'Show component "children" prop must have only one element'
-    );
-
-  //when true
-  if (when) return child[0];
+  //not children
+  if (!children) return console.error("children is required");
 
   //when false
   if (!when) {
+    console.warn("Children is not rendered because when is false");
     if (FallBack) return FallBack;
     return null;
+  }
+  //when true return children and clean console
+  if (when) {
+    console.clear();
+    return children;
   }
 };
 
