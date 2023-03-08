@@ -1,85 +1,91 @@
 {
-	"name": "easy-beauty-components/React",
-	"version": "1.0,0",
-	"private": false,
-	"description": "Easy Beauty Components for React",
-	"author": "Md Wahiduzzaman Emon",
-	"license": "MIT",
-	"main": "dist/index.js",
-	"module": "dist/index.js",
-	"files": [
-		"dist",
-		"README.md",
-		"LICENSE"
-	],
-	"keywords": [
-		"react",
-		"react-component",
-		"react-components",
-		"react-component-library",
-		"react-component-libraries",
-		"react-component-lib",
-		"react-component-libs",
-		"react-component-ui",
-		"react-component-ui-library",
-		"react-component-ui-libraries",
-		"react-component-ui-lib",
-		"react-component-ui-libs",
-		"easy-beauty-components",
-		"easy-beauty-components-react",
-		"easy-beauty-components-react-ui",
-		"easy-beauty-components-react-ui-library",
-		"easy-beauty-components-react-ui-libraries",
-		"easy-beauty-components-react-ui-lib"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React"
-	},
-	"bugs": {
-		"url": "https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React"
-	},
-	"dependencies": {
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^13.4.0",
-		"@testing-library/user-event": "^13.5.0",
-		"@types/jest": "^29.4.0",
-		"@types/node": "^18.14.6",
-		"@types/react": "^18.0.28",
-		"@types/react-dom": "^18.0.11",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-scripts": "5.0.1",
-		"typescript": "^4.9.5",
-		"web-vitals": "^3.1.1"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"@babel/cli": "^7.21.0",
-		"@babel/core": "^7.21.0",
-		"@babel/preset-env": "^7.20.2"
-	}
+  "name": "easy-beauty-components---react",
+  "version": "1.0,0",
+  "private": false,
+  "description": "Easy Beauty Components for React",
+  "author": "Md Wahiduzzaman Emon",
+  "email": "wahedemon09@gmail.com",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "react-components",
+    "react-component-library",
+    "react-component-libraries",
+    "react-component-lib",
+    "react-component-libs",
+    "react-component-ui",
+    "react-component-ui-library",
+    "react-component-ui-libraries",
+    "react-component-ui-lib",
+    "react-component-ui-libs",
+    "easy-beauty-components",
+    "easy-beauty-components-react",
+    "easy-beauty-components-react-ui",
+    "easy-beauty-components-react-ui-library",
+    "easy-beauty-components-react-ui-libraries",
+    "easy-beauty-components-react-ui-lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React",
+	"email": "wahedemon09@gmail.com",
+	"username": "MdWahiduzzamanEmon"
+  },
+  "bugs": {
+    "url": "https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React"
+  },
+
+  "homepage": "https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React",
+
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.6",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2"
+  }
 }
