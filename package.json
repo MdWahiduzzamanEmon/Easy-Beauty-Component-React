@@ -1,37 +1,57 @@
 {
-	"name": "react-lazy-loading-func",
-	"version": "1.1.2",
+	"name": "easy-beauty-components/React",
+	"version": "1.0,0",
 	"private": false,
-	"description": "React lazy loading hook",
+	"description": "Easy Beauty Components for React",
 	"author": "Md Wahiduzzaman Emon",
-	"license": "ISC",
+	"license": "MIT",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"files": [
 		"dist",
-		"README.md"
+		"README.md",
+		"LICENSE"
 	],
 	"keywords": [
 		"react",
-		"react-hook",
-		"react-lazy-loading",
-		"react-lazy-loading-hook"
+		"react-component",
+		"react-components",
+		"react-component-library",
+		"react-component-libraries",
+		"react-component-lib",
+		"react-component-libs",
+		"react-component-ui",
+		"react-component-ui-library",
+		"react-component-ui-libraries",
+		"react-component-ui-lib",
+		"react-component-ui-libs",
+		"easy-beauty-components",
+		"easy-beauty-components-react",
+		"easy-beauty-components-react-ui",
+		"easy-beauty-components-react-ui-library",
+		"easy-beauty-components-react-ui-libraries",
+		"easy-beauty-components-react-ui-lib"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/MdWahiduzzamanEmon/React_lazy_loading_function"
+		"url": "git+https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React"
 	},
 	"bugs": {
-		"url": "https://github.com/MdWahiduzzamanEmon/React_lazy_loading_function"
+		"url": "https://github.com/MdWahiduzzamanEmon/Easy-Beauty-Component-React"
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^13.5.0",
+		"@types/jest": "^29.4.0",
+		"@types/node": "^18.14.6",
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
-		"web-vitals": "^2.1.4"
+		"typescript": "^4.9.5",
+		"web-vitals": "^3.1.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",

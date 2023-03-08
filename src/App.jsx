@@ -1,16 +1,9 @@
 // import lazyLoad from "./lib";
 
-// const Home= lazyLoad("./Home/Home","Home")
 import { useEffect, useState } from "react";
+import For from "./lib";
 
-function For({ list, children }) {
-  return list.map((item, index) => {
-    return children({ item, index });
-  });
-
-}
-
-export {For};
+// const Home= lazyLoad("./Home/Home","Home")
 
 function App() {
   const [list, setList] = useState([]);
@@ -25,14 +18,13 @@ function App() {
 
   return (
     <div>
-      <For list={list}>
+      <For of={list}>
         {
-          ({ item ,index}) => {
+          ({ item, index }) => {
             return (
               <li key={index}>
                 {item.name} is {item.age} years old
               </li>
-              
             )
           }
         }
