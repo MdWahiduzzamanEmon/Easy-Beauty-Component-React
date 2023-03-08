@@ -1,7 +1,7 @@
 // import lazyLoad from "./lib";
 
 import { useEffect, useState } from "react";
-import For from "./lib";
+import {For} from "./lib";
 
 // const Home= lazyLoad("./Home/Home","Home")
 
@@ -23,7 +23,7 @@ function App() {
           ({ item, index }) => {
             return (
               <li key={index}>
-                {item.name} is {item.age} years old
+                {item?.name} is {item?.age} years old
               </li>
             )
           }
