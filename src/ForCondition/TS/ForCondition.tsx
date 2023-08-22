@@ -1,18 +1,18 @@
-// Path: src/lib/components/ForCondition/ForCondition.tsx
+import React, { ReactNode } from "react";
 
-// import React from "react";
+interface ForProps<T> {
+  of: T[];
+  children: (item: T, index: number) => ReactNode;
+}
 
-type ForProps = {
-  of: any[];
-  children: ({ item, index }: { item: any; index: number }) => JSX.Element;
-};
-
-const For = ({ of, children }: ForProps) => {
-  if (!of) return console.error("ForCondition: of is required");
-  if (!children) return console.error("ForCondition: children is required");
-  if (!Array.isArray(of))
-    return console.error("ForCondition: of must be an array");
-  return of?.map((item, index) => children({ item, index }));
-};
+function For<T>({ of, children }: ForProps<T>): ReactNode {
+  return (
+    <React.Fragment>
+      {of.map((item, index) => (
+        <React.Fragment key={index}>{children(item, index)}</React.Fragment>
+      ))}
+    </React.Fragment>
+  );
+}
 
 export default For;
