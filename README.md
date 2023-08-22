@@ -25,36 +25,33 @@ import { For, Show } from "easy-beauty-components---react";
 
 ## How to use it
 
-```bash
+```javascript
 
 ### For Component
 
 import { useEffect, useState } from "react";
 function App() {
-const [list, setList] = useState([]);
+  const [list, setList] = useState([]);
 
-useEffect(() => {
-setList([
-{ name: "John", age: 20 },
-{ name: "Jane", age: 21 },
-{ name: "Jack", age: 22 },
-]);
-}, []);
+  useEffect(() => {
+    setList([
+      { name: "John", age: 20 },
+      { name: "Jane", age: 21 },
+      { name: "Jack", age: 22 },
+    ]);
+  }, []);
 
-return (
-<For of={list}>
-{
-({ item, index }) => {
-return (
-
-<li key={index}>
-{item?.name} is {item?.age} years old
-</li>
-)
-}
-}
-</For>
-)
+  return (
+    <For of={list}>
+      {({ item, index }) => {
+        return (
+          <li key={index}>
+            {item?.name} is {item?.age} years old
+          </li>
+        );
+      }}
+    </For>
+  );
 }
 
 ```
@@ -62,21 +59,20 @@ return (
 ### Show Component
 
 ```bash
-
 import { useEffect, useState } from "react";
 function App() {
-const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-return (
-
-<div>
-<button onClick={() => setShow(!show)}>Toggle</button>
-<Show when={show}>
-<h1>Hello World</h1>
-</Show>
-</div>
-);
+  return (
+    <div>
+      <button onClick={() => setShow(!show)}>Toggle</button>
+      <Show when={show}>
+        <h1>Hello World</h1>
+      </Show>
+    </div>
+  );
 }
+
 
 ```
 
@@ -100,6 +96,7 @@ return (
 | FallBack | JSX.Element | false    |
 
 ```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
