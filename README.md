@@ -43,7 +43,7 @@ function App() {
 
   return (
     <For of={list}>
-      {({ item, index }) => {
+      {( item, index ) => {
         return (
           <li key={index}>
             {item?.name} is {item?.age} years old
@@ -64,12 +64,12 @@ function App() {
   const [show, setShow] = useState(false);
 
   return (
-    <div>
+    <>
       <button onClick={() => setShow(!show)}>Toggle</button>
       <Show when={show}>
         <h1>Hello World</h1>
       </Show>
-    </div>
+    </>
   );
 }
 
@@ -85,6 +85,7 @@ function App() {
 | Prop | Type  | Required |
 | ---- | ----- | -------- |
 | of   | Array | true     |
+| children | React Node  | true     |
 
 ```
 
@@ -93,7 +94,8 @@ function App() {
 | Prop     | Type        | Required |
 | -------- | ----------- | -------- |
 | when     | Boolean     | true     |
-| FallBack | JSX.Element | false    |
+| FallBack | React Node  | false    |
+| children | React Node  | true     |
 
 ```
 
