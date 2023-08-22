@@ -1,11 +1,10 @@
 // import React from "react";
 
-interface showComponentProps {
+type showComponentProps = {
   when: boolean;
-  //children must be an array with only one element
-  children: any[];
+  children: JSX.Element;
   FallBack?: JSX.Element;
-}
+};
 
 const Show = ({ when, children, FallBack }: showComponentProps) => {
   //when is not boolean

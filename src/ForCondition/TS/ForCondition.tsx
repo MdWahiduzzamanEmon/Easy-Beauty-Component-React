@@ -2,10 +2,10 @@
 
 // import React from "react";
 
-interface ForProps {
+type ForProps = {
   of: any[];
   children: ({ item, index }: { item: any; index: number }) => JSX.Element;
-}
+};
 
 const For = ({ of, children }: ForProps) => {
   if (!of) return console.error("ForCondition: of is required");
