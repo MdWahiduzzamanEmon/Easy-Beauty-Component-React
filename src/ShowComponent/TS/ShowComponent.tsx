@@ -1,10 +1,10 @@
-import React from "react";
+// import React from "react";
 
 interface showComponentProps {
   when: boolean;
   //children must be an array with only one element
   children: any[];
-  FallBack?: React.ReactNode;
+  FallBack?: JSX.Element;
 }
 
 const Show = ({ when, children, FallBack }: showComponentProps) => {
